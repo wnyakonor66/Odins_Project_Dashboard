@@ -236,6 +236,17 @@ input {
   border: 1px solid yellow;
 }
 
+.trend_container {
+  width: 85px;
+  height: 23px;
+  border: 1px solid red;
+  padding: 2px;
+}
+
+.trend_container h3 {
+  text-align: center;
+}
+
 .grid_container {
   display: grid;
   grid-template-columns: 230px 230px;
