@@ -21,12 +21,11 @@
   flex-direction: column;
   padding: 8px;
   width: 100%;
-  height: 100%;
 }
 
+.sidebar,
 .hero {
-  background-color: whitesmoke;
-  border: 1px solid #ffffff;
+  height: auto;
 }
 
 i {
@@ -72,6 +71,7 @@ a {
   line-height: 1;
   width: 100%;
   padding: 5px;
+  overflow: auto;
 }
 
 .side_items {
@@ -81,9 +81,250 @@ a {
   gap: 10px;
   font-size: 0.9rem;
   font-weight: 500;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  text-shadow: 3px 3px 5px rgba(101, 29, 29, 0.1);
 }
 
 .side_down {
   margin-top: 50px;
+}
+
+.hero {
+  width: 100%;
+  background-color: rgb(219, 231, 243);
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_container {
+  width: 100%;
+  background-color: #ffffff;
+  height: 120px;
+  border: 1px solid green;
+  display: flex;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+}
+
+.top_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.left_container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  padding: 1px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  gap: 5px;
+}
+
+input {
+  width: 480px;
+  border-radius: 15px;
+  background-color: rgb(219, 231, 243);
+  height: 30px;
+  padding: 2px;
+  border: 1px solid lightslategray;
+  border: none;
+}
+
+.left_container > i {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.right_container {
+  display: flex;
+  width: 40%;
+  position: relative;
+}
+
+.inner_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.inner_right span {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.inner_right > i {
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.down_part {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  gap: 50px;
+  margin: auto;
+}
+
+.down_left_side {
+  display: flex;
+  width: 500px;
+}
+
+.down_left_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.down_left_text h3 {
+  font-size: 1rem;
+}
+
+.down_right_side {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.right_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.right_item:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.new_item,
+.upload_item,
+.share_item {
+  border-radius: 30px;
+  background-color: rgb(0, 182, 254);
+  color: #ffffff;
+  padding: 8px 10px;
+  width: 70px;
+  height: 35px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.grid_flex_content {
+  display: flex;
+  gap: 20px;
+  padding: 8px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  border: 1px solid yellow;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 230px 230px;
+  grid-template-rows: 150px 150px 150px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border: 1px solid red;
+  gap: 30px;
+  background-color: rgb(219, 231, 243);
+  padding: 8px;
+  height: fit-content;
+}
+
+.grid_items {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.flex_wrapper {
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: repeat(4, 150px);
+  border: 1px solid blue;
+  margin-top: 30px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex_item {
+  border: 1px solid red;
+  grid-column: 1/1;
+  grid-row: 1/2;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.second_flex_item {
+  border: 1px solid green;
+  grid-column: 1/1;
+  grid-row: 3/4;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.flex_item_1,
+.flex_item_2 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid yellow;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.flex_item_2 p {
+  font-size: 10px;
+  padding-top: 2px;
+  line-height: 1;
+}
+
+.grid_flex_content > .grid_container,
+.grid_flex_content > .flex_item {
+  align-self: flex-start;
+}
+
+.flex_item_1 p {
+  font-size: 10px;
+  padding-top: 2px;
+  line-height: 1;
+}
+
+.grid_items p {
+  font-size: 10px;
+}
+
+.grid_items h6 {
+  font-size: 0.8rem;
+}
+
+.grid_header {
+  display: flex;
+  justify-content: space-evenly;
 }
